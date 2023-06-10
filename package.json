@@ -1,0 +1,32 @@
+{
+  "name": "rollup-plugin-complex-playground",
+  "version": "1.0.0",
+  "description": "<h2>Motivation<h2>\r The motivation come from a ts based browser extension with background and content script and rollup as bundler.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c -w",
+    "start1": "node  dist/background/background.js",
+    "start2": "node  dist/content/content.js",
+    "dev1": "nodemon  dist/background/background.js",
+    "dev2": "nodemon  dist/content/content.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanKr/rollup-plugin-ts-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanKr/rollup-plugin-ts-playground/issues"
+  },
+  "homepage": "https://github.com/NathanKr/rollup-plugin-ts-playground#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/chrome": "^0.0.237",
+    "rollup": "^3.24.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "tslib": "^2.5.3"
+  }
+}
