@@ -6,10 +6,10 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c -w",
-    "start1": "node  dist/background/background.js",
-    "start2": "node  dist/content/content.js",
-    "dev1": "nodemon  dist/background/background.js",
-    "dev2": "nodemon  dist/content/content.js"
+    "start-background": "node  dist/background/background.js",
+    "start-content": "node  dist/content/content.js",
+    "dev-background": "nodemon  dist/background/background.js",
+    "dev-content": "nodemon  dist/content/content.js"
   },
   "repository": {
     "type": "git",

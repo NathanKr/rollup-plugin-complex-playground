@@ -13,6 +13,7 @@ The motivation come from a ts based browser extension with background and conten
 <li>dist directory should have only background/background.js , content/content.js and manifest.json</li>
 <li>background.ts should be allowed to import</li>
 <li>it should be able to use chrome api in the ts file</li>
+<li>await should be possible in ts files</li>
 </ul>
  
 <h2>Setup</h2>
@@ -74,7 +75,20 @@ export default [
 
 ```
 </li>
+<li>at first i did not create tsconfig.json file because i prefere to get it from @rollup/plugin-typescript. This way i was able to compile but was not able to run code with await. so i have created a tsconfig.json file using
 
+```
+tsc --init
+```
+
+and than made two changes according to rollup error
+
+```
+"target": "esnext",       
+"module": "esnext",   
+```
+and now it is working
+ </li>
 </ul>
 
 

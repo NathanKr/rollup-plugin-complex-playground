@@ -5,7 +5,7 @@ const DIST_DIRECTORY = 'dist'
  
 const format = "esm",
   plugins = [
-    typescript(),
+    typescript(), 
     copy({
       targets: [{ src: "manifest.json", dest: DIST_DIRECTORY}],
     }),
